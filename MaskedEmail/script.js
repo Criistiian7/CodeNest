@@ -17,6 +17,6 @@ function maskEmail(email) {
 
 console.log(maskEmail(email));
 console.log(maskEmail("apple.pie@example.com"));
-console.log(maskEmail("freecodecamp@example.com"));
+console.log(maskEmail("bestinfo@example.com"));
 console.log(maskEmail("info@test.dev"));
 console.log(maskEmail("user@domain.org"));
