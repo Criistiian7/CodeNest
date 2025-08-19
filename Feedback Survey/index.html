@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Feedback Survey</h1>
+    <p id="description">
+      We’d love to hear your thoughts. Please fill out this quick survey.
+    </p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <label id="email-label" for="email">Email:</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label id="number-label" for="number">Age:</label>
+      <input
+        id="number"
+        name="number"
+        type="number"
+        min="10"
+        max="100"
+        placeholder="Your age"
+      />
+
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" name="referral">
+        <option value="social">Social Media</option>
+        <option value="friend">Friend</option>
+      </select>
+
+      <p>Would you recommend us?</p>
+      <label><input type="radio" name="recommend" value="yes" /> Yes</label>
+      <label><input type="radio" name="recommend" value="no" /> No</label>
+
+      <p>What did you like? (Select all that apply)</p>
+      <label
+        ><input type="checkbox" name="features" value="design" /> Design</label
+      >
+      <label
+        ><input type="checkbox" name="features" value="speed" /> Speed</label
+      >
+      <label
+        ><input type="checkbox" name="features" value="support" />
+        Support</label
+      >
+
+      <label for="comments">Any comments?</label>
+      <textarea
+        id="comments"
+        name="comments"
+        placeholder="Leave a comment here..."
+      ></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f6fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: #f9fbff;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: #e63946;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: #2a9d8f;
+}
+
+button[type="submit"] {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.radio-group {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background-color: #f0f4ff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.radio-option:hover {
+  background-color: #dbe9ff;
+}
+
+.radio-option input[type="radio"] {
+  accent-color: #007bff;
+  cursor: pointer;
+  margin: 0;
+}
+
+.radio-option input[type="radio"]:checked {
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  border-color: #007bff;
+  background-color: #e6f0ff;
+}
+
+.radio-option:has(input[type="radio"]:checked) {
+  color: #007bff;
+  font-weight: 600;
+}
+
+input:first-of-type {
+  border-radius: 10px;
+  background-color: #eef4ff;
+  border-color: #80bfff;
+}

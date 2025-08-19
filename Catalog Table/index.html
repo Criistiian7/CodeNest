@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Catalog</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 2rem;
+        background-color: #f0f4f8;
+      }
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        text-align: left;
+      }
+      thead {
+        background-color: #34495e;
+        color: white;
+      }
+      tfoot td {
+        font-weight: bold;
+        text-align: center;
+        background-color: #ecf0f1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Personal Book Catalog</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Publication Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Great Gatsby</td>
+          <td>F. Scott Fitzgerald</td>
+          <td>Classic</td>
+          <td>1925</td>
+        </tr>
+        <tr>
+          <td>To Kill a Mockingbird</td>
+          <td>Harper Lee</td>
+          <td>Fiction</td>
+          <td>1960</td>
+        </tr>
+        <tr>
+          <td>1984</td>
+          <td>George Orwell</td>
+          <td>Dystopian</td>
+          <td>1949</td>
+        </tr>
+        <tr>
+          <td>Harry Potter and the Sorcerer's Stone</td>
+          <td>J.K. Rowling</td>
+          <td>Fantasy</td>
+          <td>1997</td>
+        </tr>
+        <tr>
+          <td>The Hobbit</td>
+          <td>J.R.R. Tolkien</td>
+          <td>Fantasy</td>
+          <td>1937</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Total Books: 5</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
